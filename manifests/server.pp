@@ -20,6 +20,7 @@ class lpmqtt::server (
   $imap_hostname,
   $imap_password,
   $imap_use_ssl = true,
+  $imap_folder = 'INBOX',
   $mqtt_hostname = 'firehose01.openstack.org',
   $topic = 'launchpad',
   $mqtt_username = 'infra',
