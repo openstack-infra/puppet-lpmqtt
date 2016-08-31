@@ -1,11 +1,11 @@
-[Unit]
-Description=lpmqtt Daemon
+[imap]
+hostname = <%= @imap_hostname %>
+username = <%= @imap_username %>
+password = <%= @imap_password %>
+use_ssl = <%= @imap_use_ssl %>
 
-[Service]
-Type=simple
-ExecStart=/usr/local/bin/lpmqtt /etc/lpmqtt.conf
-User=lpmqtt
-Group=lpmqtt
-
-[Install]
-WantedBy=multi-user.target
+[mqtt]
+hostname = <%= @mqtt_hostname %>
+base_topic = <%= @topic %>
+username = <%= @mqtt_username %>
+password = <%= @mqtt_password %>
