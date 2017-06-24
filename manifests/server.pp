@@ -19,13 +19,13 @@ class lpmqtt::server (
   $imap_username,
   $imap_hostname,
   $imap_password,
+  $mqtt_password,
   $imap_use_ssl = true,
   $imap_folder = 'INBOX',
   $imap_delete_old = false,
   $mqtt_hostname = 'firehose01.openstack.org',
   $topic = 'launchpad',
   $mqtt_username = 'infra',
-  $mqtt_password,
 ) {
   file { '/etc/lpmqtt.conf':
     ensure  => present,
